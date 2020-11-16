@@ -1,0 +1,52 @@
+/*CSS reset settings here*/
+*{
+    margin: 1%;
+    padding: 0px;
+    overflow: hidden;
+    height: auto;
+    border-radius: 13px 13px 13px 13px;
+   }
+   #fondo{
+    width: 970px;
+    background-color: #000039;
+    margin: 0px auto;
+    overflow: hidden;
+    height: auto;
+    
+       }
+   #header{
+    min-height: 80px;
+    background-color:red;
+       
+     }
+   #navigation{
+    min-height: 250px;
+    width: 200px;
+    background-color: silver;
+    display: inline block;
+    float: left;
+        
+   }
+   #main_content{
+    min-height: 400px;
+    width: 700px;
+    background-color: black;  
+    padding: 4pt;
+    display: inline-block;
+    float: right;
+       }
+    #footer{
+    min-height: 50px;
+    width: 950px;
+    background-color: purple;
+    vertical-align: bottom;
+    position: static;
+    }
+    h2{
+       color: aqua;
+    }
+    p{
+       color: aqua;
+    }
+      
+   

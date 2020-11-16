@@ -1,0 +1,88 @@
+*{
+    vertical-align: top;
+    margin: auto;
+
+}
+
+#container{
+    background-color: white;
+    width: 970px;
+    min-height: 900px;
+    border: 1px solid black;
+}
+#blueBox{
+    background-color:navy;
+    width: 970px;
+    min-height: 400px;
+}
+#python{
+    width: 400px;
+    height: 100px;
+    margin: 20px;
+}
+#search{
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    display: inline-block;
+    float: right;
+    margin: 30px;
+}
+#top{
+    text-align: center;
+    background-color:blue;
+    width: 700px; 
+    margin:  20px auto;
+    
+}
+#hh{
+    display: inline-block;
+    margin:  20px ;
+    font-size: 140%;
+    color: white;
+}
+#links{
+    text-align: center;
+    background-color: navy;
+    width: 250px;
+    margin: 20px 40px;
+    display: inline-block;
+    font:  120% sans-serif;
+    padding: 20px;
+    color: white;
+    font-size: 140%;
+}
+#text{
+    background-color: navy;
+    width: 500px;
+    margin: 20px 10px;
+    text-align: center;
+    display: inline-block;
+    font: bold 120% sans-serif;
+    padding: 20px;
+    color: whitesmoke;
+}
+#content{
+    width: 350px;
+    margin: 30px;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    font:  150% sans-serif;
+}
+#foot{
+    height: 100px;
+    text-align: center;
+    background-color: blue;
+    padding-top: 20px;
+    
+    
+}
+#bb{
+    
+    display: inline-block;
+    font: bold 150% sans-serif;
+    margin: 20px;
+    
+}

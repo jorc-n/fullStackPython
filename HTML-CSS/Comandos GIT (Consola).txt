@@ -1,0 +1,7 @@
+git config core.autocrlf false  	/errores
+rm -rf namearch  			/eliminar cualquier nombre o archivo
+dir/p 					/muestra los archivos dentro del directorio.
+git status 				/archivos que se modificaron y aún no se suben.
+git add . 				/sube todos los archivos o versiona 
+git commit -m "first commit"		/comitear=subir archivos localmente con un comentario (-m)=mensaje
+git pull -u origin main    		/=toma toda la fuente que no tenga en mi computador y la trae a mi computador y la agrega y el codigo se actualiza con lo mismo que esta en github.
