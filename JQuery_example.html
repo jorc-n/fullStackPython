@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            alert("You are working with Jquery!");
+
+            $('#a').click(function() {
+                alert("estas abandonando la página");
+            })
+
+            $('#hide').click(function() {
+                $('p').hide();
+
+            })
+            $('#show').click(function() {
+                $('p').show();
+
+            })
+
+            $('.append').click(function() {
+                $('.result').append('<h4>.append adds HTML! <h4>')
+            })
+
+            $('button').click(function() {
+                $('button').css('background-color', 'yellow');
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+    <p>This is a paragraph!</p>
+
+    <p>This is also a paragraph</p>
+    <button id="hide">This will hide all paragraph</button>
+    <button id="show">Click yo show all paragraphs</button>
+    <a id="myLink" href="www.google.cl">Go to Google</a>
+    <h3>Mountain view California</h3>
+    <h2>Seattle, Washington</h2>
+    <button class="append">Click to see, append work!</button>
+    <div class="result"></div>
+</body>
+
+</html>

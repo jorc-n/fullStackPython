@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#button1').click(function() {
+                $("#bloque1").addClass("bg-danger");
+            })
+
+            $('#button3').click(function() {
+                $("#p1 , h1").hide();
+
+            })
+            $('#button4').click(function() {
+                $("#p1,h1").show();
+            })
+
+            $('#button5').click(function() {
+                $('#bloque1 , #bloque2').toggle('slow');
+            })
+
+
+            $('#button2').click(function() {
+                $('#bloque2').slideToggle("slow");
+            })
+
+            $('#button6').click(function() {
+                $('#bloque1 , #bloque2').slideDown();
+            })
+            $('#button7').click(function() {
+                $('#bloque1 , #bloque2').slideUp();
+            })
+
+            $('#button8').click(function() {
+                $('div').fadeIn("slow");
+            })
+            $('#button9').click(function() {
+                $('div').fadeOut("slow");
+            })
+            $('#button10').click(function() {
+                $('h2').before($("#bloque1"));
+            })
+            $('#button11').click(function() {
+                $('h2').after($("#bloque1"));
+            })
+            $('#button12').click(function() {
+                $('h1').after("<h2>Función Append<\h2>");
+            })
+            $('#button13').click(function() {
+                $('.jumbotron').html('<h2>HTML HTML HTML <\h2>');
+            })
+            $('.jumbotron').attr("Tittle", "Bloques");
+            $('#button14').click(function() {
+                $('.jumbotron').text('TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT');
+            })
+        })
+    </script>
+
+
+</head>
+
+<body>
+
+    </div>
+    <div class="jumbotron" id="bloque1">
+        <h1 class="display-4">Hello, world!</h1>
+        <p id="p1">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" id="button1" href="#" role="button">AddClass</a>
+        <a class="btn btn-primary btn-lg" id="button3" href="#" role="button">Esconder</a>
+        <a class="btn btn-primary btn-lg" id="button4" href="#" role="button">Mostrar</a>
+    </div>
+    </div>
+    <div class="jumbotron" id="bloque2">
+        <h1 class="display-4">SlideToggle</h1>
+        <p>Presiona para esconder el bloque.</p>
+        <a class="btn btn-primary btn-lg" id="button2" href="#" role="button">SlideToggle</a>
+    </div>
+    <a class="btn btn-primary btn-lg" id="button5" href="#" role="button">Toggle</a>
+
+    <a class="btn btn-primary btn-lg" id="button6" href="#" role="button">Slide Down</a>
+    <a class="btn btn-primary btn-lg" id="button7" href="#" role="button">Slide Up</a>
+    <a class="btn btn-primary btn-lg" id="button8" href="#" role="button">Fade In</a>
+    <a class="btn btn-primary btn-lg" id="button9" href="#" role="button">Fade Out</a>
+    <a class="btn btn-primary btn-lg" id="button10" href="#" role="button">Before</a>
+    <a class="btn btn-primary btn-lg" id="button11" href="#" role="button">After</a>
+
+
+    <h2>Funciones After Before</h2>
+    <a class="btn btn-primary btn-lg" id="button12" href="#" role="button">Append</a>
+    <a class="btn btn-primary btn-lg" id="button13" href="#" role="button">HTML</a>
+    <a class="btn btn-primary btn-lg" id="button14" href="#" role="button">TEXT</a>
+</body>
