@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Ninja Desapareciendo</title>
+    <style>
+        div {
+            width: 900px;
+            height: 500px;
+            background-color: black;
+            padding: 20px;
+        }
+        
+        img {
+            display: inline-block;
+            margin: 8px;
+        }
+        
+        input {
+            display: block;
+            width: 90px;
+            height: 30px;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $('img').click(function() {
+                $(this).fadeOut("slow");
+            })
+            $('input').click(function() {
+                $('img').fadeIn("slow");
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <img class="ninja" src="ninja.jpg" height=200px width=200px>
+        <img class="ninja" src="ninja.jpg" height=200px width=200px>
+        <img class="ninja" src="ninja.jpg" height=200px width=200px>
+        <img class="ninja" src="ninja.jpg" height=200px width=200px>
+        <img class="ninja" src="ninja.jpg" height=200px width=200px>
+        <img class="ninja" src="ninja.jpg" height=200px width=200px>
+        <img class="ninja" src="ninja.jpg" height=200px width=200px>
+        <img class="ninja" src="ninja.jpg" height=200px width=200px>
+        <input type="button" value="Restaurar">
+    </div>
+</body>
