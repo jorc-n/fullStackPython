@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <title>POKEDEX</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        #container {
+            width: 800px;
+            min-height: auto;
+            margin: auto;
+            background-color: gray;
+            border: 2px solid black;
+        }
+        
+        #image {
+            margin: 10px;
+            display: inline;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+
+            for (var i = 1; i <= 151; i++) {
+                var image = new Image();
+
+                var src = 'http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/' + i + '.png';
+                image.src = src;
+
+                $('#image').append(image);
+
+            }
+
+        })
+    </script>
+
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="box">
+            <div id="image"></div>
+        </div>
+    </div>
+</body>
