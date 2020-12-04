@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>POKEDEX</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <style>
+        #container {
+            width: 800px;
+            min-height: auto;
+            margin: auto;
+            background-color: gray;
+            border: 2px solid black;
+        }
+        
+        #data {
+            height: 120px;
+            background-color: orange;
+        }
+        
+        #image {
+            margin: 10px;
+            display: inline;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+
+            for (var i = 1; i <= 151; i++) {
+                var image = new Image();
+                var src = 'http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/' + i + '.png';
+                image.src = src;
+                $('#image').append(image);
+            }
+            $('img').click(function() {
+                $.get("https://pokeapi.co/api/v2/pokemon/1/", function(res) {
+                    var html_str = "";
+                    ('#data').html_str += "<h4>Types</h4>";
+                    ('#data').html_str += "<ul>";
+                    for (var i = 0; i < res.types.length; i++) {
+                        ('#data').html_str += "<li>" + res.types[i].type.name + "</li>";
+                    }
+                    ('#data').html_str += "</ul>";
+                    $("#bulbasaur").html(html_str);
+                }, "json");
+
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="data"> </div>
+        <div id="box">
+            <div id="image"></div>
+        </div>
+    </div>
+
+</body>
